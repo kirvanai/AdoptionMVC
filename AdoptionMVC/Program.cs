@@ -1,3 +1,5 @@
+using AdoptionMVC.Models;
+
 namespace AdoptionMVC
 {
     public class Program
@@ -8,7 +10,7 @@ namespace AdoptionMVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            builder.Services.AddDbContext<AdoptionDB>();
+            builder.Services.AddDbContext<AdoptionDbContext>();
 
             var app = builder.Build();
 
